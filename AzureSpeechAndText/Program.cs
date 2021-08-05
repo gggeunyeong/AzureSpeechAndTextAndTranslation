@@ -84,9 +84,11 @@ namespace AzureSpeechAndText
             speechConfig.SpeechSynthesisVoiceName = "en-GB-George"; // add this
             using SpeechSynthesizer speechSynthesizer = new SpeechSynthesizer(speechConfig);
 
-            // Synthesize spoken output
+            // Synthesize spoken output from string response
             // SpeechSynthesisResult speak = await speechSynthesizer.SpeakTextAsync(responseText);
 
+
+            // https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/speech-synthesis-markup?tabs=csharp
             string responseSsml = System.IO.File.ReadAllText("speechsynthesis.xml");
 
             SpeechSynthesisResult speak = await speechSynthesizer.SpeakSsmlAsync(responseSsml);
