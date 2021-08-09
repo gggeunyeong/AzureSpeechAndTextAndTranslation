@@ -1,12 +1,12 @@
-﻿using Microsoft.Extensions.Configuration;
-using System;
-using Microsoft.CognitiveServices.Speech;
+﻿using Microsoft.CognitiveServices.Speech;
 using Microsoft.CognitiveServices.Speech.Audio;
 using Microsoft.CognitiveServices.Speech.Translation;
-using System.Threading.Tasks;
-using System.Text;
-using System.Media;
+using Microsoft.Extensions.Configuration;
+using System;
 using System.Collections.Generic;
+using System.Media;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace AzureSpeechAndTranslation
 {
